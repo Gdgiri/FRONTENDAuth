@@ -27,7 +27,7 @@ const Register = () => {
       // Set a 3-second timeout before navigating to the login page
       setTimeout(() => {
         navigate("/login");
-      }, 3000); // 3000 milliseconds = 3 seconds
+      }, 1000); // 3000 milliseconds = 3 seconds
     } catch (error) {
       console.log(error);
       setMsg(error.response?.data?.message || "An error occurred");

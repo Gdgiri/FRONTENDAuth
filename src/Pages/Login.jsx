@@ -26,7 +26,7 @@ const Login = () => {
       // Set a timeout of 3 seconds before navigating to the landing page
       setTimeout(() => {
         navigate("/landing");
-      }, 3000);
+      }, 1000);
     } catch (error) {
       console.log(error);
       setMsg(error.response?.data?.message || "An error occurred");
